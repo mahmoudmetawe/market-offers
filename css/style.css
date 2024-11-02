@@ -1,0 +1,672 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Bahij_TheSansArabic-Bold ;
+    direction: rtl;
+    box-sizing: border-box;
+}
+@font-face{
+    src: url(/fonts/Bahij_TheSansArabic-Bold.ttf);
+    font-family:Bahij_TheSansArabic-Bold ;
+}
+:root {
+    --maincolor: rgb(54, 88, 84);
+    --inputcolor:rgba(245, 245, 245, 1);
+    --btnhover :rgba(72, 115, 111, 1);
+    --btncolor : rgb(128, 161, 159);
+    --bordercolor:rgb(216, 216, 216);
+} 
+body{
+    background-position: center;
+}
+
+.maincontent{
+    display: flex;
+}
+
+#myChart1{
+    width: 400px;
+    overflow: hidden;
+    color: var(--btnhover);
+}
+
+footer{
+    display: none;
+}
+@media only screen and ( max-width: 600px){
+
+    footer{
+        display: flex;
+        background-color: var(--btnhover);
+        width: 90%;
+        height: 250px;
+        margin-right: 5%;
+    }
+    .footernav{
+        overflow: hidden;
+    }
+    .footernav a {
+        color: white;
+        width: 48%;
+        display: inline-flex;
+        transition: 0.3s;
+    }
+    .footernav a span {
+        padding-right: 5px;
+    }
+    footer .imgcont{
+        width: 100%;
+        padding: 10px 10px 10px 0;
+    }
+    .footernav img{
+        width: 50%;
+        height: 50px;
+    }
+    .footernav a:hover {
+        background-color: #f1f1f1;
+        color:var(--maincolor) ;
+        border-radius: 2px;
+        
+        
+    }
+
+}
+
+
+
+/*................................................ start css reg................................*/
+.reg{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    padding: 30px 40px;
+    
+}
+
+
+.reg .contreg {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 80vh;
+    border-radius: 5px;
+    border: 1px solid var(--inputcolor);
+    transition: 1s;
+    position: relative;
+}
+.reg .contreg:hover{
+    box-shadow: 0px 0px 20px 30px var(--inputcolor) ;
+}
+.contreg img{
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+}
+.contreg input{
+    width: 310px;
+    height: 37px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--inputcolor);
+}
+.contreg input::placeholder{
+    font-size: small;
+}
+.contreg button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--btncolor);
+    color: white;
+}
+.contreg button:hover{
+    background-color: var(--btnhover);
+}
+.contreg a{
+    text-decoration: none;
+    color: var(--btncolor);
+
+}
+.contreg .forgetpass{
+    margin-left: 35px;
+    padding-top: 5px;
+}
+
+.contreg a i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: var(--maincolor);
+}
+.contreg .btn{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--btncolor);
+    color: white;
+}
+.contreg .btn:hover{
+    background-color: var(--btnhover);
+}
+.contreg .hide{
+    width: 300px;
+    height: 30px;
+    background-color: rgba(255, 229, 229, 1);
+    border-radius: 10px;
+    position: absolute;
+    top: 158px;
+    right: 45px;
+    color: red;
+    font-weight: 600;
+}
+.contreg span {
+    font-size: 10px;
+    padding-right: 10px;
+}
+
+.contreg .insertcode input{
+width: 40px;
+height: 40px;
+border-radius: 50px;
+margin: 0 7px 20px 7px;
+background-color: transparent;
+border: 1px solid var(--btncolor);
+
+}
+@media only screen and ( max-width: 600px){
+    .reg .contreg {
+        width: 330px;
+        height: 50%;
+    } 
+    .contreg .forgetpass{
+        margin-left: 8px;
+        padding-top: 5px;
+    }
+    .contreg input{
+        width: 290px;
+    }
+}
+
+/*------------------------------------------multi form ---------------------------------------------*/
+/* Style the form */
+#regForm {
+    background-color:transparent;
+    margin:  auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: ;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+/*------------------------------------------multi form ---------------------------------------------*/
+/*................................................ start css sidesignup.............................*/
+.signcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.signup .sidesign{
+    width: 200px;
+    height: 90vh;
+    background-color: var(--btnhover);
+    font-size: 11px;
+    color: white;
+    border-radius: 10px;
+}
+.sidesign img{
+    width: 70px;
+    height: 30px;
+}
+.sidesign form div {
+    margin-bottom: -9px;
+
+}
+
+.signup  .contentsign{
+    width: 600px;
+    height: 90vh;
+    background-color: white;
+    border: 1px solid var(--btncolor);
+    border-radius: 10px;
+}
+.contentsign #off{
+    font-weight: bold;
+    color: rgba(204, 52, 52, 1);
+
+}
+.contentsign img{
+    width: 80px;
+    height: 80px;
+}
+.contentsign form {
+    width: 400px;
+}
+.contentsign form input::placeholder{
+    font-size: 12px;
+}
+.contentsign form input{
+    margin: 9px 0 5px 0;
+    height: 35px;
+    background-color: rgba(245, 245, 245, 1);
+}
+.contentsign form .btn{
+    width: 400px;
+    background-color: var(--btncolor);
+    border-radius: 20px;
+    border: none;
+    margin-top: 22px;
+}
+.contentsign form .btn:hover{
+    background-color: var(--btnhover);
+}
+.contentsign i {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    color: var(--btnhover);
+    clip-path:circle(55%);
+}
+
+.imgupload{
+    margin-bottom: 5px;
+    position: relative;
+}
+.imgupload h6{
+    font-size: 12px;
+    color: gray;
+    padding: 3px 0;
+}
+
+.imgupload Label {
+    Height: 100px;
+    Width: 400px;
+    Border: 1.4px dashed #999;
+    border-radius: 10px;
+    color: gray;
+    
+}
+
+.imgupload Label:hover{
+    color: var(--btnhover);
+    Border: 1.5px dashed var(--btnhover);
+    cursor: pointer;
+}
+.endreg{
+    position: absolute;
+    right: 48%;
+    top: 45%;
+    transform: (-50% , -50%);
+}
+.fa-right-from-bracket{
+    position: absolute;
+    right: 75%;
+    top: 85%;
+    transform: (-50% , -50%);
+    font-size: larger;
+    color: var(--btnhover);
+}
+
+
+
+
+@media only screen and (max-width: 838px) {
+    .signup .sidesign {
+        width: 200px;
+    }
+
+    .signup .contentsign {
+        width: 350px;
+    }
+
+    .contentsign form {
+        width: 300px;
+    }
+
+    .contentsign form .btn {
+        width: 300px;
+        margin-top: 10px;
+    }
+    .imgupload Label {
+        Width: 300px;
+    }
+    .endreg{
+        position: absolute;
+        right: 46.5%;
+        top: 50%;
+        transform: (-50% , -50%);
+    }
+
+}
+@media only screen and (max-width: 600px) {
+
+    .signup .sidesign {
+        display: none;
+    }
+
+    .contentsign form {
+        width: 300px;
+    }
+
+    .contentsign form .btn {
+        width: 300px;
+        margin-top: 30px;
+    }
+    .signup  .contentsign{
+        margin-right: 28px;
+        height: 63vh;
+    }
+    .contentsign form input{
+        margin: 10px 0;
+    }
+    .imgupload Label {
+        Width: 300px;
+    }
+    .endreg{
+        position: absolute;
+        right: 20%;
+        top: 30%;
+        transform: (-50% , -50%);
+    }
+    .fa-right-from-bracket{
+        position: absolute;
+        right: 80%;
+        top: 58%;
+        transform: (-50% , -50%);
+    }
+}
+
+
+
+
+/*.................................................. start css navbar................................*/
+
+.content .navbar{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid var(--bordercolor);
+    
+}
+.navbar .navbar-text select{
+    height: 40px;
+    width: 200px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.navbar-brand .fa-bars:hover{
+    color: var(--btnhover);
+} 
+.nav-item {
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid var(--bordercolor);
+    border-radius: 100%;
+    background-color: var(--bordercolor);
+    position: relative;
+}
+.nav-item .fa-bell{
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+    transform: (-50% , -50%);
+    
+}
+/*.................................................. end   css navbar................................*/
+
+/*................................................ start css sidebar................................*/
+
+.sidenav {
+    height:inherit;
+    width: 205px;
+    background-color:var(--maincolor);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.sidenav .dropdown .dropdown-menu{
+    background-color: var(--btnhover);
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color:white;
+    display: block;
+    padding-right: 20px;
+    transition: .3s;
+    display: flex;
+}
+.sidenav a span {
+    padding-right: 10px;
+}
+.sidenav img{
+    width: 50%;
+    height: 10px;
+}
+.sidenav a:hover {
+    background-color: #f1f1f1;
+    color:var(--maincolor) ;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 2px;
+    
+}
+.sidenav a:focus{
+    background: white;
+    color: var(--btnhover);
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.sidenav img{
+    width: 80px ;
+    height: 35px;
+    margin-bottom: 35px;
+    margin-top: -10px;
+    
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+.sidenav img{
+    width: 80px ;
+    height: 35px;
+    margin-bottom: 35px;
+    margin-top: -10px;
+    
+}
+/*.................................................. end css sidebar................................*/
+
+/*............................................. start content offers................................*/
+.content{
+    width: 100%;
+    height: max-content;
+}
+.content .addoffer{
+    border: 1px solid var(--bordercolor);
+    width: calc(100% - 50px);
+    height: min-content;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.content .addoffer label{
+    font-size: 13px;
+    font-weight: bold;
+}
+.addimg label{
+    Height: 100px;
+    Width: 100px;
+    Border: 1.4px dashed #999;
+    border-radius: 10px;
+    color: gray;
+    
+}
+.content .addoffer .form1{
+    width: calc(100% - 350px);
+}
+.addoffer .form1 .date input {
+    width: 315px;
+}
+.addoffer .form1 .date select{
+    width: 317px;
+    height: 35px;
+}
+.addoffer .form1 select{
+    background-color: white;
+    border: 1px solid var(--bordercolor);
+    border-radius: 5px;
+}
+.addoffer .form1 select option{
+    padding-right: 10px;
+}
+.addoffer .form1 button{
+    background-color:var(--btncolor);
+    width: 50%;
+    color: white;
+}
+.addoffer .form1 .bran{
+    background-color: white;
+    border: 2px solid var(--btncolor);
+    color: var(--btncolor);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.addoffer .form1 button:hover{
+    background-color: var(--btnhover);
+    color: white;
+}
+/*............................................. end   content offers................................*/
+
+
+/*............................................. start content discount..............................*/
+
+.content .discountoffer{
+    border: 1px solid var(--bordercolor);
+    width: calc(100% - 50px);
+    height: 100vh;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.discountoffer .adddiscount{
+    height: 40px;
+    margin-top: 15px;
+    outline: 1px solid var(--btncolor);
+    color: var(--btncolor);
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.discountoffer .adddiscount:hover{
+    background-color: var(--btnhover);
+    color: white;
+}
+
+form .searchbox #searchdiscount {
+    width: 400px;
+}
+form .searchbox  .form-select{
+    
+    width: 170px;
+    margin: 0 25px;
+}
+/*---------------------------------------------------------------------------*/
+.content .mainofferscontent {
+    border: 1px solid var(--bordercolor);
+    width: calc(100% - 50px);
+    height: 100vh;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mainofferscontent form{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mainofferscontent form .btn{
+    width: 200px;
+    height: 100px;
+    border: 2px solid var(--btncolor);
+    color: var(--btncolor);
+    font-weight: bold;
+    
+}
+    
+.mainofferscontent form .btn:hover{
+    background-color: var(--btnhover);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mainofferscontent form a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.mainofferscontent form a span{
+    margin-right: 10px;
+}
+
+form .country{
+    width: 50%;
+}
+form .country select{
+    width: 100%;
+    height: 35px;
+    padding-right: 10px;
+}

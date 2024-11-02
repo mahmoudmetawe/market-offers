@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <title>offers</title>
+</head>
+<body>
+
+    <div class="maincontent">
+        <div class="sidenav ">
+            <img class=" mx-auto d-block focus-ring" src="pic/logo/logo.png" alt="">
+
+            
+                <a class="btn" href="offers.html">
+                    <i class="fa-brands fa-gg-circle"></i>
+                    <span>العروض</span>
+                </a>
+            
+            
+                <a class="btn" href="discount.html">
+                    <i class="fa-solid fa-mattress-pillow"></i>
+                    <span>الخصومات</span>
+                </a>
+            
+            
+                <a class="btn" href="coupons.html">
+                    <i class="fa-solid fa-ticket"></i>
+                    <span>الكوبونات</span>
+                </a>
+            
+                <a class="btn" href="branches.html">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>فروعي</span>
+                </a>
+            
+                <a class="btn" href="discountsaves.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span>تسجيلات الخصومات</span>
+                </a>
+            
+                <a class="btn" href="setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>اعداد الحسابات</span>
+                </a>
+            
+                <a class="btn" href="reg1.html">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span>تسجيل الخروج</span>
+                </a>
+        </div>
+
+
+
+        <div class="content mb-5">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid ">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <i class="fa-regular fa-bell"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text" >
+                            <select name="" id="">
+                                <option value="">اختر الفرع</option>
+                                <option value="">carefour</option>
+                                <option value="">fathallah</option>
+                                <option value="">panda</option>
+                                <option value="">alothaim</option>
+                                <option value="">tazag</option>
+                                <option value="">elbokhary</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+
+            <section class="container addoffer">
+                <h6 class="my-4 f-bold" style="font-weight: bold;">اضافة خصم جديد</h6>
+                <form action="" class="form1">
+                    <div class="mb-3">
+                        <label for="nameoffer" class="form-label">اسم الخصم</label>
+                        <input type="text" class="form-control" id="nameoffer" placeholder="ادخل اسم العرض">
+                    </div>
+
+                    <div class="">
+                        <label for="discoffer" class="form-label">وصف الخصم</label>
+                        <textarea class="form-control mb-2" id="discoffer" rows="3" placeholder="وصف العرض"></textarea>
+                    </div>
+
+                    <div class="d-flex mb-3">
+                    
+                        <div class="date">
+                            <label for="startdate" class="form-label">تاريخ البدأ</label>
+                            <input type="text" class="form-control" id="startdate" placeholder="ادخل تاريخ البدأ"
+                            onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                    
+                        <div class="me-5 date">
+                            <label for="enddate" class="form-label">تاريخ الانتهاء</label>
+                            <input type="text" class="form-control" id="enddate" placeholder="ادخل تاريخ الانتهاء" 
+                            onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="availbranch" class="d-flex justify-content-between mb-2">
+                            <span>الفروع المتاحة للخصم</span>
+                            <a href="#" class="">اضافة فرع جديد</a>
+                        </label>
+                        <select name="" id="availbranch" style="width: 680px; height: 35px;">
+                            <option value="">فرع رقم 1</option>
+                            <option value="">فرع رقم 2</option>
+                        </select>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="mb-3 date">
+                            <label for="maxperson" class="form-label">اقصى عدد للمستفيدين</label>
+                            <input type="text" class="form-control" id="maxperson" placeholder="حدد عدد الاشخاص">
+                        </div>
+                        <div class="mx-5 date">
+                            <label for="layergoal" class="mb-2" >الفئة المستهدفة</label><br>
+                            <select name="" id="layergoal">
+                                <option value="normal">normal</option>
+                                <option value="standard">standard</option>
+                                <option value="VIP">VIP</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="mb-3 ">
+                            <label for="price" class="form-label">السعر الحالي</label>
+                            <input type="text" class="form-control" id="price" placeholder="حدد السعر الحالي(ر.س)">
+                        </div>
+                        <div class="mb-3 mx-5">
+                            <label for="persent" class="form-label">نسبة الخصم</label>
+                            <input type="text" class="form-control" id="persent" placeholder="حدد نسبة الخصم (%)">
+                        </div>
+                        <div class="mb-3">
+                            <label for="afterper" class="form-label">السعر بعد الخصم</label>
+                            <input type="text" class="form-control" id="afterper" placeholder="حدد السعر بعد الخصم (ر.س)">
+                        </div>
+                    </div>
+
+                    <div class="text-end addimg mb-3">
+                        <h6 style="font-size: 13px; font-weight: bold;">اضافة صور للخصم</h6>
+                        <input class="visually-hidden" type="file" id="addimgoffer" />
+                        <label for="addimgoffer" class="text-center">
+                            <img src="pic/side/gallery.png" alt="" style="width: 20px;height: 20px; margin-top: 20px;"><br>
+                            <span>قم بارفاق صورة لا تتجاوز 3.5 ميجا بايت</span>
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="offerinclud" class="form-label">الخصم يشمل</label>
+                        <input type="email" class="form-control" id="offerinclud" placeholder="يشمل..">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="notinclud" class="form-label">الخصم لا يشمل</label>
+                        <input type="email" class="form-control" id="notinclud" placeholder="لا يشمل..">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="conditionuse" class="form-label">شروط الاستخدام</label>
+                        <textarea class="form-control" id="conditionuse" rows="5" placeholder="شروط الاستخدام"></textarea>
+                    </div>
+
+                    <div class="my-3">
+                        <button class="btn " type="submit" style="width: 200px;">الاضافة و الحفظ</button>
+                    </div>
+                </form>
+            
+            
+            
+            
+            </section>
+
+
+            <footer></footer>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jscode.js"></script>
+
+</body>
+</html>

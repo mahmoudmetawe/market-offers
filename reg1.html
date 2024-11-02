@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>offers</title>
+  </head>
+  <body background="pic/body/body.png" style="direction: rtl">
+    <div class="reg text-center">
+      <form class="container contreg">
+        <img src="pic/reg/reglogo.png" alt="" />
+        <h6 style="font-weight: bold">اهلا بك من جديد</h6>
+        <p style="font-size: small; color: gray">
+          من فضلك ادخل البيانات التالية لتسجيل دخولك
+        </p>
+
+        <div class="number">
+          <input
+            class="mb-3 form-control mx-auto text-end"
+            type="tel"
+            class=""
+            placeholder="  رقم الجوال"
+          />
+        </div>
+        <div class="mb-4 pasw">
+          <input
+            class="form-control mx-auto text-end"
+            type="password"
+            class=""
+            placeholder="  كلمة المرور"
+            id="pass"
+          />
+          <p class="text-start forgetpass">
+            <a href="reg2.html">نسيت كلمة المرور ؟</a>
+          </p>
+        </div>
+
+        <button class="mb-1 click" id="done">
+          <a
+            onclick="sweet();"
+            href="mainoffers.html"
+            style="color: white; width: 100%"
+            >تسجيل الدخول</a
+          >
+        </button>
+        <p>ليس لديك حساب...؟ <a href="signup1.html">انضم الأن</a></p>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jscode.js"></script>
+  </body>
+</html>
